@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD | Services</title>
+<link rel="stylesheet" href="style1.css" />
+<link href="colorbox.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:350px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0px;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script src="js/jquery_min_colorbox.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+    
+    <script>
+	 
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+<center>
+<table cellpadding="0" cellspacing="0" class="tbl_main">
+<tr>
+<td>
+    <table border="0">
+        <tbody>
+            <tr>
+        	<td rowspan="2" class="logo"><a href="index.html"><img style="border:none;" src="images/logo.png"></a></td>
+                <td align="right">
+                <span style="font-size:14px;font-family:Arial, Helvetica, sans-serif"></td>
+            </tr>
+            <tr>
+                <td class="logo-right" valign="top" style="border:0px;">
+                <div class="div2">
+                   <table align="right" class="menu">
+                    <tbody><tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="aboutus.html">About Us</a></td>
+                    <td><a href="services.html">Services</a></td>
+                    <!--<td><a href="clientele.html">Clientele</a></td>-->
+                    <td><a href="contact.html">Contact</a></td>
+                    </tr>
+                    </tbody></table>
+               </div>
+               </td>
+        </tr>
+    </tbody></table>
+</td
+></tr>
+
+<tr><td class="slider"><div id="slideshow">
+     <img src="slider1/1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="slider1/2.jpg" alt="Slideshow Image 2" />
+    <img src="slider1/3.jpg" alt="Slideshow Image 3" />
+    <img src="slider1/4.jpg" alt="Slideshow Image 4" />
+</div></td></tr>
+
+<tr><td class="content">
+<table cellpadding="2" cellspacing="2" width="880px">
+<tr>
+
+<td class="left">
+
+<div>
+<h4 class="red">Housekeeping Services</h4>
+<div class="text_left">
+<p>The importance of housekeeping is becoming popular these days. Today most of the malls and companies are hiring housekeeping staff to fulfil the requirements. We are providing you best services by trained housekeepers and get customer satisfaction. We provide (Cleaning Services) Housekeeping Services for Commercial Activities as Shopping Complex & Malls and showroom, Offices, Industries, Hotel and Institutes etc... Our housekeeping services are focused to ensure visual as well as hygienic cleaning of our client's premises all the time. We also provide housekeeping consumables and tools.</p>
+
+</div>
+<div class="img_box" style="margin-top:25px;"><img src="image/Housekeeping-Services.jpg" /></div>
+</div>
+
+<div style="clear:left;">
+<h4 class="blue">Pest Control</h4>
+<div class="text_left">
+<p>We are engaged in offering Pest Control Services for educational institutions, health care, hotels & lodging, property management, restaurant, retail, warehouse & storage. These services are in conformation with defined industry standards and highly effective in identifying & eliminating pests like ants, cockroaches, bed-bugs, carpenter ant, tick & spiders from the premises. In this regard, our professionals conduct surveys in all the vulnerable places in the house such as cracks & crevices, furniture & fixtures, appliances and make sure to use insecticides/pesticides & apply treatments accordingly. Pest control measures we undertake, are based on thorough Facility Management Services surveillance of the residential premises and include cleaning, application of proper insecticides / pesticides and other treatments. This has further helped us in preventing these creatures from entering the property and eliminating the existing ones from the roots. </p>
+</div>
+<div class="img_box" style="margin-top:25px;"><img src="image/pest-control.jpg" /></div>
+</div>
+
+</td>
+
+<td class="right">
+<h4 class="green">Site Map</h4>
+<div class="box1">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<!--<li><a href="clientele.html">Clientele</a></li>-->
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<h4 class="blue">Services We Provide</h4>
+<div class="box1">
+<ul>
+<li><a href="services.html">Housekeeping Services</a></li>
+<li><a href="services.html">Electro-Mechanical Services</a></li>
+<li><a href="services.html">Pest Control</a></li>
+<li><a href="services.html">Horticulture Services</a></li>
+<li><a href="services.html">Office Support</a></li>
+<li><a href="services.html">Pantry Services</a></li>
+</ul>
+</div>
+</td>
+
+</tr>
+</table>
+
+<div style="clear:left;">
+<h4 class="yellow">Horticulture Services</h4>
+<div class="text_left" style="width:630px;">
+<p>It is said creating nature in working place or in your premises is equivalent to take a step to exist God with yourself. It just requires having best guideline and proper planning. You just require engaging us for developing nature in your concern area and just get tranquil at your home. DFMS as a professional facility management organization offers its client to build their premises in best presentable way by developing beautiful gardens with amazing flora and attractive landscaping. These concern activities assist you and your employees to feel your organization as the best in all features.  </p>
+</div>
+<div class="img_box" style="margin-top:10px;"><img src="image/holty-cultuire.jpg" /></div>
+</div>
+
+<div style="clear:left;">
+<h4 class="red">Office Support</h4>
+<div class="text_left" style="width:630px;">
+<p>Our company has formed a group of qualified and experienced office staff that has the experience and knowledge in various spheres of works that is required in an office. We have trained professionals like receptionists, dispatch official, personnel to handle photocopy and other such machines. Our team is trained as per the requirements of different offices. </p>
+</div>
+<div class="img_box" style="padding-top:5px; padding-bottom:5px;" ><img src="image/office-Support.jpg" /></div>
+</div>
+
+<div style="clear:left;">
+<h4 class="green">Pantry Services</h4>
+<div class="text_left" style="width:630px;">
+<p>Our Pantry Services helps in translating health and hygiene in daily life at every place we work. We understand the taste and needs of the staff in a way, which nobody can. Thereby, we have extended our pantry services with the help of well trained pantry boys who have got an experience of catering services. We provide the food and beverages of various brands and vending machines that offers a great variety to the client. </p>
+</div>
+<div class="img_box" ><img src="image/pantry.jpg" /></div>
+</div>
+<div style="clear:left;padding-top:5px">
+<h4 class="blue">Electro Mechanical Services</h4>
+<div class="text_left" style="width:630px;">
+<p><b>HVAC - Operation & Maintenance:</b> We offer services of maintenance with the help of our trained professionals. We offer our services for Heating, Ventilation and Air Conditioning (HVAC) that are considered to be the three closely related fundamental functions found in Offices, Homes, and other buildings. Our team of professionals helps our clients to regulate room temperature, humidity, and air flow, ensuring that such elements remain within their acceptable ranges.</p>
+<p><b>D.G. Set - Operation & Maintenance:</b> We offer our services for Diesel Power Distribution & Management. Our employees enhance the existing knowledge of client and suggest efficient ways for distributing diesel power effectively.</p>
+<p><b>Minor projects, paint & patchwork:</b> We offer our services of Minor projects, paint & patchwork for the requirements of our commercial, industrial and residential clients.</p>
+<p><b>Electrical, Plumbing, carpentry and all general services:</b> We offer electrical, plumbing, carpentry & all other general maintenance services for the requirements of our residential, commercial and industrial clients. Using best quality materials and products from leading suppliers, we strive to provide an effective service. </p>
+<p><b>Office Renovation & Interiors</b><br />
+We present a wide range of office renovation and interior design architectural services. Since our establishment, we have always been catering to client's taste, lifestyle and budget. Our team of qualified professionals who are highly experienced are committed to work effectively on challenging projects. They seek feedback from our clients regarding their projects and take the inputs positively. We provide complete Interiors  and renovation services.</p>
+<p><b>Electronic Security System</b><br />
+We provide the complete range of electronic security systems to cater for not only high end, but also medium end and low-end projects. These systems include Fire fighting systems, Intruders alarm, Access control systems, CCTV surveillance camera, Hand held metal detector, Door frame metal detector and Belly search mirrors appropriately.
+In summary, a one-stop solution to ensure that the installed systems are maintained, reliably, safely and that costs are carefully controlled.</p>
+</div>
+<div class="img_box" ><br /><img src="image/Electro_Mech.jpg" /><br /><br /><img src="image/carpenter.jpg" /><br /><br /><img src="image/carpenter1.jpg" /></div>
+</div>
+
+
+</td></tr>
+<tr><td class="footer">
+<div> Copyright 2025 DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD</div>
+</td></tr>
+</table>
+</center>
+</body>
+
+</html>

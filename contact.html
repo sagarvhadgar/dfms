@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD | Contact Us</title>
+<link rel="stylesheet" href="style1.css" />
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:350px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0px;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+<center>
+<table cellpadding="0" cellspacing="0" class="tbl_main">
+<tr>
+<td>
+    <table border="0">
+        <tbody>
+            <tr>
+        	<td rowspan="2" class="logo"><a href="index.html"><img style="border:none;" src="images/logo.png"></a></td>
+                <td align="right">
+                <span style="font-size:14px;font-family:Arial, Helvetica, sans-serif"></td>
+            </tr>
+            <tr>
+                <td class="logo-right" valign="top" style="border:0px;">
+                <div class="div2">
+                   <table align="right" class="menu">
+                    <tbody><tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="aboutus.html">About Us</a></td>
+                    <td><a href="services.html">Services</a></td>
+                    <!--<td><a href="clientele.html">Clientele</a></td>-->
+                    <td><a href="contact.html">Contact</a></td>
+                    </tr>
+                    </tbody></table>
+               </div>
+               </td>
+        </tr>
+    </tbody></table>
+</td
+></tr>
+
+<tr><td class="slider"><div id="slideshow">
+     <img src="slider1/1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="slider1/2.jpg" alt="Slideshow Image 2" />
+    <img src="slider1/3.jpg" alt="Slideshow Image 3" />
+    <img src="slider1/4.jpg" alt="Slideshow Image 4" />
+</div></td></tr>
+
+<tr><td class="content">
+<table cellpadding="2" cellspacing="2" width="880px">
+<tr>
+
+<td class="left">
+<h4 class="red">Contact Us</h4>
+        </td>
+
+<td class="right">
+<h4 class="green">Mailing Address</h4>
+<div class="box1" style="background:url(image/add_back.png) no-repeat left top; height:180px; padding-left:14px; padding-top:48px; position:relative; left:-10px;">
+<p>DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD<br />
+                            Flat No A-104, Riddhi Priyanka CHS, <br />
+                            Sector 10, Millennium Towers, Sanpada<br />
+                            Navi Mumbai - 400 705 Maharastra INDIA<br />        		            
+                            E-mail: <font style="font-size:13px;">bd@dfms.net.in
+                            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+</div>
+
+</td>
+
+</tr>
+</table>
+
+
+
+</td></tr>
+<tr><td class="footer">
+<div> Copyright 2025 DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD</div>
+</td></tr>
+</table>
+</center>
+</body>
+
+</html>

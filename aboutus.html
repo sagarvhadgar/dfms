@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD | Company Profile</title>
+<link rel="stylesheet" href="style1.css" />
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:350px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0px;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+<center>
+<table cellpadding="0" cellspacing="0" class="tbl_main">
+<tr>
+<td>
+    <table border="0">
+        <tbody>
+            <tr>
+        	<td rowspan="2" class="logo"><a href="index.html"><img style="border:none;" src="images/logo.png"></a></td>
+                <td align="right">
+                <span style="font-size:14px;font-family:Arial, Helvetica, sans-serif"></td>
+            </tr>
+            <tr>
+                <td class="logo-right" valign="top" style="border:0px;">
+                <div class="div2">
+                   <table align="right" class="menu">
+                    <tbody><tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="aboutus.html">About Us</a></td>
+                    <td><a href="services.html">Services</a></td>
+                    <!--<td><a href="clientele.html">Clientele</a></td>-->
+                    <td><a href="contact.html">Contact</a></td>
+                    </tr>
+                    </tbody></table>
+               </div>
+               </td>
+        </tr>
+    </tbody></table>
+</td
+></tr>
+
+<tr><td class="slider"><div id="slideshow">
+    <img src="slider1/1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="slider1/2.jpg" alt="Slideshow Image 2" />
+    <img src="slider1/3.jpg" alt="Slideshow Image 3" />
+    <img src="slider1/4.jpg" alt="Slideshow Image 4" />
+</div></td></tr>
+
+<tr><td class="content">
+<table cellpadding="2" cellspacing="2" width="880px">
+<tr>
+
+<td class="left">
+<h4 class="red">About Us</h4>
+<p>With a focus on value rather than profit, DFMS was started with the vision to revolutionize facility management services. With humble beginnings in 2024, we’ve evolved into a large nest of dedicated professionals and skilled experts. We follow a client-centric approach that focuses on satisfying all your specific needs. This has helped us emerge as an entity associated with trust and quality by all our partners.</p>
+<p>DFMS is an established facilities management service provider with a Mumbai & Gujarat presence. We are a self-performing with no sub-contractors which helps us reduce costs and attain control over our operations. Our in-house operations team and ground staff strive to deliver consistent services to our clients and give back to society. We create advanced systems that provide timely delivery of world-class solutions to the most complicated problems.</p>
+<div>
+<h4 class="green">Our Mission</h4>
+<div class="text_left">
+<p>To provide environment friendly services, with the help of best practices to obtain efficiency, ease, efficacy and employee satisfaction</p>
+</div>
+<div class="img_box" ><img src="image/mission.png" /></div>
+</div>
+
+
+<div style="clear:left;">
+<h4 class="yellow">Our Vision</h4>
+<div class="text_left">
+<p>To be a leader in the field of Facility Services to focus and convert non-core business activities in targeted segments and high growth with lifetime relationships with stakeholders.</p>
+</div>
+<div class="img_box" ><img src="image/vision.png" /></div>
+</div>
+
+<div style="clear:left;">
+<h4 class="blue">Our Value</h4>
+<div class="text_left">
+<h4><span style="color:#d70008; font-size:44px;">A</span>pproach</h4>
+<p style="padding-left:15px;">We approach maintenance of the Client facility as we would our own home – Clean, Operational and Happy. </p>
+<h4><span style="color:#225886; font-size:44px;">B</span>est People </h4>
+<p style="padding-left:15px;">Attracting, developing and retaining the best talent for our business, challenging our people, demonstrating a “can-do” attitude and fostering a collaborative and mutually supportive environment. </p>
+<h4><span style="color:#225886; font-size:44px;">R</span>espect</h4>
+<p style="padding-left:15px;">We respect and value the people in our Organisation - the house men and the chamber maids are the real strength & face of DFMS. </p>
+</div>
+<div class="img_box"><img src="image/values.png" /></div>
+</div>
+
+
+
+</td>
+
+<td class="right">
+<h4 class="green">Site Map</h4>
+<div class="box1">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<!--<li><a href="clientele.html">Clientele</a></li>-->
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<h4 class="blue">Services We Provide</h4>
+<div class="box1">
+<ul>
+<li><a href="services.html">Housekeeping Services</a></li>
+<li><a href="services.html">Electro-Mechanical Services</a></li>
+<li><a href="services.html">Pest Control</a></li>
+<li><a href="services.html">Horticulture Services</a></li>
+<li><a href="services.html">Office Support</a></li>
+<li><a href="services.html">Pantry Services</a></li>
+</ul>
+</div>
+
+<!--<h4 class="red">Clientele</h4>-->
+<div class="box1" style="padding-left:45px; background-color:#fff; width:200px;">
+
+<script type="text/javascript">
+/*
+Cross browser Marquee II- � Dynamic Drive (www.dynamicdrive.com)
+For full source code, 100's more DHTML scripts, and TOS, visit http://www.dynamicdrive.com
+Modified by jscheuer1 for continuous content. Credit MUST stay intact for use
+*/
+
+//Specify the marquee's width (in pixels)
+var marqueewidth="200px"
+//Specify the marquee's height
+var marqueeheight="350px"
+//Specify the marquee's marquee speed (larger is faster 1-10)
+var marqueespeed=2
+//Specify initial pause before scrolling in milliseconds
+var initPause=1000
+//Specify start with Full(1)or Empty(0) Marquee
+var full=1
+//Pause marquee onMousever (0=no. 1=yes)?
+var pauseit=0
+//Specify Break characters for IE as the two iterations
+//of the marquee, if text, will be too close together in IE
+var iebreak='<p></p>'
+
+//Specify the marquee's content
+//Keep all content on ONE line, and backslash any single quotations (ie: that\'s great):
+
+var marqueecontent='<img src="image/clientele/client1.png"/><img src="image/clientele/client2.png"/><img src="image/clientele/client3.png"/><img src="image/clientele/client4.png"/><img src="image/clientele/client5.png"/><img src="image/clientele/client6.png"/><img src="image/clientele/client7.png"/><img src="image/clientele/client8.png"/><img src="image/clientele/client9.png"/><img src="image/clientele/client10.png"/><img src="image/clientele/client11.png"/><img src="image/clientele/client12.png"/><img src="image/clientele/client13.png"/><img src="image/clientele/client14.png"/><img src="image/clientele/client15.png"/><img src="image/clientele/client16.png"/><img src="image/clientele/client17.png"/><img src="image/clientele/client18.png"/><img src="image/clientele/client19.png"/><img src="image/clientele/client20.png"/><img src="image/clientele/client21.png"/><img src="image/clientele/client22.png"/><img src="image/clientele/client23.png"/><img src="image/clientele/client24.png"/><img src="image/clientele/client25.png"/><img src="image/clientele/client26.png"/><img src="image/clientele/client27.png"/>'
+
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+var copyspeed=marqueespeed
+var pausespeed=(pauseit==0)? copyspeed: 0
+var iedom=document.all||document.getElementById
+var actualheight=''
+var cross_marquee, cross_marquee2, ns_marquee
+
+function populate(){
+if (iedom){
+var lb=document.getElementById&&!document.all? '' : iebreak
+cross_marquee=document.getElementById? document.getElementById("iemarquee") : document.all.iemarquee
+cross_marquee2=document.getElementById? document.getElementById("iemarquee2") : document.all.iemarquee2
+cross_marquee.style.top=(full==1)? '8px' : parseInt(marqueeheight)+8+"px"
+cross_marquee2.innerHTML=cross_marquee.innerHTML=marqueecontent+lb
+actualheight=cross_marquee.offsetHeight
+cross_marquee2.style.top=(parseInt(cross_marquee.style.top)+actualheight+8)+"px" //indicates following #1
+}
+else if (document.layers){
+ns_marquee=document.ns_marquee.document.ns_marquee2
+ns_marquee.top=parseInt(marqueeheight)+8
+ns_marquee.document.write(marqueecontent)
+ns_marquee.document.close()
+actualheight=ns_marquee.document.height
+}
+setTimeout('lefttime=setInterval("scrollmarquee()",20)',initPause)
+}
+window.onload=populate
+
+function scrollmarquee(){
+
+if (iedom){
+if (parseInt(cross_marquee.style.top)<(actualheight*(-1)+8))
+cross_marquee.style.top=(parseInt(cross_marquee2.style.top)+actualheight+8)+"px"
+if (parseInt(cross_marquee2.style.top)<(actualheight*(-1)+8))
+cross_marquee2.style.top=(parseInt(cross_marquee.style.top)+actualheight+8)+"px"
+cross_marquee2.style.top=parseInt(cross_marquee2.style.top)-copyspeed+"px"
+cross_marquee.style.top=parseInt(cross_marquee.style.top)-copyspeed+"px"
+}
+
+else if (document.layers){
+if (ns_marquee.top>(actualheight*(-1)+8))
+ns_marquee.top-=copyspeed
+else
+ns_marquee.top=parseInt(marqueeheight)+8
+}
+}
+
+if (iedom||document.layers){
+with (document){
+if (iedom){
+write('<div style="position:relative;width:'+marqueewidth+';height:'+marqueeheight+';overflow:hidden" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">')
+write('<div id="iemarquee" style="position:absolute;left:0px;top:0px;width:100%;">')
+write('</div><div id="iemarquee2" style="position:absolute;left:0px;top:0px;width:100%;z-index:100;background:white;">')
+write('</div></div>')
+
+}
+else if (document.layers){
+write('<ilayer width='+marqueewidth+' height='+marqueeheight+' name="ns_marquee">')
+write('<layer name="ns_marquee2" width='+marqueewidth+' height='+marqueeheight+' left=0 top=0 onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed"></layer>')
+write('</ilayer>')
+}
+}
+}
+</script>
+
+
+
+
+
+
+				<!--<marquee direction="up" width="150px" height="500px" >
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client1.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client2.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client3.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client4.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client5.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client6.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client7.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client8.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client9.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client10.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client11.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client12.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client13.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client14.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client15.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client16.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client17.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client18.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client19.png" Title=""></div>
+                        <div class="clientele_vertical_marquee"><img src="image/clientele/client20.png" Title=""></div>
+                                              
+                  </marquee> -->
+</div>
+
+
+</td>
+
+</tr>
+</table>
+
+
+
+
+</td></tr>
+<tr><td class="footer">
+<div> Copyright 2025 DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD</div>
+</td></tr>
+</table>
+</center>
+</body>
+
+</html>

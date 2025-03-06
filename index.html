@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD | Home</title>
+<link rel="stylesheet" href="style1.css" />
+<link href="colorbox.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:350px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0px;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script src="js/jquery_min_colorbox.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+    
+    <script>
+	 
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+        
+         <script type="text/javascript" src="js/crawler.js"></script>
+
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+
+
+</head>
+
+<body>
+<center>
+<table cellpadding="0" cellspacing="0" class="tbl_main">
+<tr>
+<td>
+    <table border="0">
+        <tbody>
+            <tr>
+        	<td rowspan="2" class="logo"><a href="index.html"><img style="border:none;" src="images/logo.png"></a></td>
+                <td align="right">
+                <span style="font-size:14px;font-family:Arial, Helvetica, sans-serif"></td>
+            </tr>
+            <tr>
+                <td class="logo-right" valign="top" style="border:0px;">
+                <div class="div2">
+                   <table align="right" class="menu">
+                    <tbody><tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td><a href="aboutus.html">About Us</a></td>
+                    <td><a href="services.html">Services</a></td>
+                    <!--<td><a href="clientele.html">Clientele</a></td>-->
+                    <td><a href="contact.html">Contact</a></td>
+                    </tr>
+                    </tbody></table>
+               </div>
+               </td>
+        </tr>
+    </tbody></table>
+</td
+></tr>
+
+<tr><td class="slider"><div id="slideshow">
+     <img src="slider1/1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="slider1/2.jpg" alt="Slideshow Image 2" />
+    <img src="slider1/3.jpg" alt="Slideshow Image 3" />
+    <img src="slider1/4.jpg" alt="Slideshow Image 4" />
+</div></td></tr>
+
+<tr><td class="content">
+<table cellpadding="2" cellspacing="2" width="880px">
+<tr>
+
+<td class="left">
+<h4 class="red">Welcome to DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD</h4>
+<p>With a focus on value rather than profit, DFMS was started with the vision to revolutionize facility management services. With humble beginnings in 2024, we’ve evolved into a large nest of dedicated professionals and skilled experts. We follow a client-centric approach that focuses on satisfying all your specific needs. This has helped us emerge as an entity associated with trust and quality by all our partners.</p>
+<p>DFMS is an established facilities management service provider with a Mumbai & Gujarat presence. We are a self-performing with no sub-contractors which helps us reduce costs and attain control over our operations. Our in-house operations team and ground staff strive to deliver consistent services to our clients and give back to society. We create advanced systems that provide timely delivery of world-class solutions to the most complicated problems.</p>
+
+<div class="marquee" id="mycrawler2">
+			<a class="group1" href="image/slider/1.jpg" ><img src="image/thumb/1.jpg" alt="1" width="150"  style="border:solid 1px #ccc;" /></a>
+            <a class="group1" href="image/slider/2.jpg" ><img src="image/thumb/2.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/3.jpg" ><img src="image/thumb/3.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/4.jpg" ><img src="image/thumb/4.jpg" alt="2" width="150" style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/5.jpg" ><img src="image/thumb/5.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/6.jpg" ><img src="image/thumb/6.jpg" alt="2" width="150" style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/7.jpg" ><img src="image/thumb/7.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/8.jpg" ><img src="image/thumb/8.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/9.jpg" ><img src="image/thumb/9.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/10.jpg" ><img src="image/thumb/10.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/11.jpg" ><img src="image/thumb/11.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/12.jpg" ><img src="image/thumb/12.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/13.jpg" ><img src="image/thumb/13.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/14.jpg" ><img src="image/thumb/14.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/15.jpg" ><img src="image/thumb/15.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/16.jpg" ><img src="image/thumb/16.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/17.jpg" ><img src="image/thumb/17.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+            <a class="group1" href="image/slider/18.jpg" ><img src="image/thumb/18.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
+					</div>
+                  <script type="text/javascript">
+								marqueeInit({
+									uniqueid: 'mycrawler2',
+									style: {
+										'padding': '2px',
+										'width': '680px',
+										'height': '100px',
+										'z-index': '1'
+									},
+									inc: 2, //speed - pixel increment for each iteration of this marquee's movement
+									mouse: 'pause', //mouseover behavior ('pause' 'cursor driven' or false)
+									moveatleast: 2,
+									neutral: 150,
+									savedirection: true,
+									random: true
+								});
+								</script>
+
+</td>
+
+<td class="right">
+<h4 class="green">Site Map</h4>
+<div class="box1">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<!--<li><a href="clientele.html">Clientele</a></li>-->
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<h4 class="blue">Services We Provide</h4>
+<div class="box1">
+<ul>
+<li><a href="services.html">Housekeeping Services</a></li>
+<li><a href="services.html">Electro-Mechanical Services</a></li>
+<li><a href="services.html">Pest Control</a></li>
+<li><a href="services.html">Horticulture Services</a></li>
+<li><a href="services.html">Office Support</a></li>
+<li><a href="services.html">Pantry Services</a></li>
+</ul>
+</div>
+</td>
+
+</tr>
+</table>
+
+
+
+</td></tr>
+<tr><td class="footer">
+<div> Copyright 2025 DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD</div>
+</td></tr>
+</table>
+</center>
+</body>
+
+</html>
