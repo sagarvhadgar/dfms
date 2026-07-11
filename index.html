@@ -1,236 +1,583 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD | Home</title>
-<link rel="stylesheet" href="style1.css" />
-<link href="colorbox.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dynamite Facility Management Services Pvt Ltd — Empowering Spaces. Enabling Excellence. Integrated facility management across Mumbai and Gujarat.">
+  <meta name="keywords" content="facility management, housekeeping, pest control, HVAC, Mumbai, Gujarat, DFMS">
+  <meta name="author" content="Dynamite Facility Management Services Pvt Ltd">
+  <meta name="robots" content="index, follow">
 
-/*** set the width and height to match your images **/
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dfms.net.in/">
+  <meta property="og:title" content="DFMS — Dynamite Facility Management Services">
+  <meta property="og:description" content="Empowering Spaces. Enabling Excellence. Trusted integrated facility management services.">
+  <meta property="og:image" content="https://dfms.net.in/slider1/1.jpg">
 
-#slideshow {
-    position:relative;
-    height:350px;
-}
+  <title>DFMS — Dynamite Facility Management Services | Home</title>
+  <link rel="canonical" href="https://dfms.net.in/">
 
-#slideshow IMG {
-    position:absolute;
-    top:0;
-    left:0px;
-    z-index:8;
-    opacity:0.0;
-}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
-#slideshow IMG.active {
-    z-index:10;
-    opacity:1.0;
-}
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-#slideshow IMG.last-active {
-    z-index:9;
-}
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-</style>
-<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
-<script src="js/jquery_min_colorbox.js"></script>
-<script src="js/jquery.colorbox.js"></script>
-    
-    <script>
-	 
-			$(document).ready(function(){
-				//Examples of how to assign the ColorBox event to elements
-				$(".group1").colorbox({rel:'group1'});
-				$(".group2").colorbox({rel:'group2', transition:"fade"});
-				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-				$(".group4").colorbox({rel:'group4', slideshow:true});
-				$(".ajax").colorbox();
-				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
-				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-				$(".inline").colorbox({inline:true, width:"50%"});
-				$(".callbacks").colorbox({
-					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-				});
-				
-				//Example of preserving a JavaScript event for inline calls.
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-					return false;
-				});
-			});
-		</script>
-        
-         <script type="text/javascript" src="js/crawler.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
 
-<script type="text/javascript">
-
-/*** 
-    Simple jQuery Slideshow Script
-    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
-***/
-
-function slideSwitch() {
-    var $active = $('#slideshow IMG.active');
-
-    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
-
-    // use this to pull the images in the order they appear in the markup
-    var $next =  $active.next().length ? $active.next()
-        : $('#slideshow IMG:first');
-
-    // uncomment the 3 lines below to pull the images in random order
-    
-    // var $sibs  = $active.siblings();
-    // var rndNum = Math.floor(Math.random() * $sibs.length );
-    // var $next  = $( $sibs[ rndNum ] );
-
-
-    $active.addClass('last-active');
-
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 1000, function() {
-            $active.removeClass('active last-active');
-        });
-}
-
-$(function() {
-    setInterval( "slideSwitch()", 5000 );
-});
-
-</script>
-
-
-
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Dynamite Facility Management Services Pvt Ltd",
+    "url": "https://dfms.net.in",
+    "logo": "https://dfms.net.in/images/logo.png",
+    "description": "Integrated facility management services across Mumbai and Gujarat.",
+    "email": "bd@dfms.net.in",
+    "telephone": "+91-9326485137",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Flat No A-104, Riddhi Priyanka CHS, Sector 10, Millennium Towers, Sanpada",
+      "addressLocality": "Navi Mumbai",
+      "postalCode": "400705",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "areaServed": ["Mumbai", "Gujarat"],
+    "foundingDate": "2024"
+  }
+  </script>
 </head>
-
 <body>
-<center>
-<table cellpadding="0" cellspacing="0" class="tbl_main">
-<tr>
-<td>
-    <table border="0">
-        <tbody>
-            <tr>
-        	<td rowspan="2" class="logo"><a href="index.html"><img style="border:none;" src="images/logo.png"></a></td>
-                <td align="right">
-                <span style="font-size:14px;font-family:Arial, Helvetica, sans-serif"></td>
-            </tr>
-            <tr>
-                <td class="logo-right" valign="top" style="border:0px;">
-                <div class="div2">
-                   <table align="right" class="menu">
-                    <tbody><tr>
-                    <td><a href="index.html">Home</a></td>
-                    <td><a href="aboutus.html">About Us</a></td>
-                    <td><a href="services.html">Services</a></td>
-                    <!--<td><a href="clientele.html">Clientele</a></td>-->
-                    <td><a href="contact.html">Contact</a></td>
-                    </tr>
-                    </tbody></table>
-               </div>
-               </td>
-        </tr>
-    </tbody></table>
-</td
-></tr>
 
-<tr><td class="slider"><div id="slideshow">
-     <img src="slider1/1.jpg" alt="Slideshow Image 1" class="active" />
-    <img src="slider1/2.jpg" alt="Slideshow Image 2" />
-    <img src="slider1/3.jpg" alt="Slideshow Image 3" />
-    <img src="slider1/4.jpg" alt="Slideshow Image 4" />
-</div></td></tr>
+  <!-- Page Loader -->
+  <div class="page-loader" role="status" aria-label="Loading page">
+    <div class="loader-spinner"></div>
+  </div>
 
-<tr><td class="content">
-<table cellpadding="2" cellspacing="2" width="880px">
-<tr>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-<td class="left">
-<h4 class="red">Welcome to DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD</h4>
-<p>With a focus on value rather than profit, DFMS was started with the vision to revolutionize facility management services. With humble beginnings in 2024, we’ve evolved into a large nest of dedicated professionals and skilled experts. We follow a client-centric approach that focuses on satisfying all your specific needs. This has helped us emerge as an entity associated with trust and quality by all our partners.</p>
-<p>DFMS is an established facilities management service provider with a Mumbai & Gujarat presence. We are a self-performing with no sub-contractors which helps us reduce costs and attain control over our operations. Our in-house operations team and ground staff strive to deliver consistent services to our clients and give back to society. We create advanced systems that provide timely delivery of world-class solutions to the most complicated problems.</p>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a href="index.html" class="navbar-logo" aria-label="DFMS Home">
+          <img src="images/logo.png" alt="DFMS Logo" width="44" height="44">
+          <span>DFMS</span>
+        </a>
 
-<div class="marquee" id="mycrawler2">
-			<a class="group1" href="image/slider/1.jpg" ><img src="image/thumb/1.jpg" alt="1" width="150"  style="border:solid 1px #ccc;" /></a>
-            <a class="group1" href="image/slider/2.jpg" ><img src="image/thumb/2.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/3.jpg" ><img src="image/thumb/3.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/4.jpg" ><img src="image/thumb/4.jpg" alt="2" width="150" style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/5.jpg" ><img src="image/thumb/5.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/6.jpg" ><img src="image/thumb/6.jpg" alt="2" width="150" style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/7.jpg" ><img src="image/thumb/7.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/8.jpg" ><img src="image/thumb/8.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/9.jpg" ><img src="image/thumb/9.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/10.jpg" ><img src="image/thumb/10.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/11.jpg" ><img src="image/thumb/11.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/12.jpg" ><img src="image/thumb/12.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/13.jpg" ><img src="image/thumb/13.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/14.jpg" ><img src="image/thumb/14.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/15.jpg" ><img src="image/thumb/15.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/16.jpg" ><img src="image/thumb/16.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/17.jpg" ><img src="image/thumb/17.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-            <a class="group1" href="image/slider/18.jpg" ><img src="image/thumb/18.jpg" alt="2" width="150"  style="border:solid 1px #ccc;"/></a>
-					</div>
-                  <script type="text/javascript">
-								marqueeInit({
-									uniqueid: 'mycrawler2',
-									style: {
-										'padding': '2px',
-										'width': '680px',
-										'height': '100px',
-										'z-index': '1'
-									},
-									inc: 2, //speed - pixel increment for each iteration of this marquee's movement
-									mouse: 'pause', //mouseover behavior ('pause' 'cursor driven' or false)
-									moveatleast: 2,
-									neutral: 150,
-									savedirection: true,
-									random: true
-								});
-								</script>
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+          <li class="nav-dropdown">
+            <a href="services.html" class="nav-link nav-dropdown-toggle">Services <i class="fa-solid fa-chevron-down" style="font-size:0.65rem;margin-left:4px" aria-hidden="true"></i></a>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="services.html#housekeeping" class="nav-dropdown-item" role="menuitem"><i class="fa-solid fa-broom" aria-hidden="true"></i> Housekeeping</a>
+              <a href="services.html#pest-control" class="nav-dropdown-item" role="menuitem"><i class="fa-solid fa-bug" aria-hidden="true"></i> Pest Control</a>
+              <a href="services.html#horticulture" class="nav-dropdown-item" role="menuitem"><i class="fa-solid fa-leaf" aria-hidden="true"></i> Horticulture</a>
+              <a href="services.html#office-support" class="nav-dropdown-item" role="menuitem"><i class="fa-solid fa-building" aria-hidden="true"></i> Office Support</a>
+              <a href="services.html#pantry" class="nav-dropdown-item" role="menuitem"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Pantry Services</a>
+              <a href="services.html#electro-mechanical" class="nav-dropdown-item" role="menuitem"><i class="fa-solid fa-gears" aria-hidden="true"></i> Electro-Mechanical</a>
+            </div>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
 
-</td>
+        <div class="navbar-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode" type="button"></button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-<td class="right">
-<h4 class="green">Site Map</h4>
-<div class="box1">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="aboutus.html">About Us</a></li>
-<li><a href="services.html">Services</a></li>
-<!--<li><a href="clientele.html">Clientele</a></li>-->
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-<h4 class="blue">Services We Provide</h4>
-<div class="box1">
-<ul>
-<li><a href="services.html">Housekeeping Services</a></li>
-<li><a href="services.html">Electro-Mechanical Services</a></li>
-<li><a href="services.html">Pest Control</a></li>
-<li><a href="services.html">Horticulture Services</a></li>
-<li><a href="services.html">Office Support</a></li>
-<li><a href="services.html">Pantry Services</a></li>
-</ul>
-</div>
-</td>
+  <main>
 
-</tr>
-</table>
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg">
+        <img src="slider1/1.jpg" alt="" loading="eager" aria-hidden="true">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-particles" aria-hidden="true"></div>
 
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          Empowering Spaces. Enabling Excellence.
+        </div>
+        <h1 id="hero-heading">World-Class Facility Management Services</h1>
+        <p>With a focus on value rather than profit, DFMS was started with the vision to revolutionize facility management services. We deliver consistent, world-class solutions across Mumbai &amp; Gujarat.</p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-primary btn-lg">Explore Services</a>
+          <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="18" data-suffix="+">0+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="2" data-suffix="">0</div>
+            <div class="hero-stat-label">States Served</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">24/7</div>
+            <div class="hero-stat-label">Support &amp; Monitoring</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">100%</div>
+            <div class="hero-stat-label">Self-Performing</div>
+          </div>
+        </div>
+      </div>
 
+      <a href="#about" class="hero-scroll" aria-label="Scroll to content">
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        Scroll
+      </a>
+    </section>
 
-</td></tr>
-<tr><td class="footer">
-<div> Copyright 2025 DYNAMITE FACILITY MANAGEMENT SERVICES PVT LTD</div>
-</td></tr>
-</table>
-</center>
+    <!-- About Preview -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="split-layout">
+          <div data-aos="fade-right">
+            <span class="section-label">About DFMS</span>
+            <h2 id="about-heading" class="section-title">Trusted Facility Management Partner</h2>
+            <p>With humble beginnings in 2024, we've evolved into a large nest of dedicated professionals and skilled experts. We follow a client-centric approach that focuses on satisfying all your specific needs.</p>
+            <p>DFMS is an established facilities management service provider with a Mumbai &amp; Gujarat presence. We are self-performing with no sub-contractors which helps us reduce costs and attain control over our operations.</p>
+            <div class="feature-list mt-4">
+              <div class="feature-item">
+                <div class="feature-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Skilled &amp; Trained Workforce</h4>
+                  <p>Our in-house operations team and ground staff strive to deliver consistent services.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-check"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+                <div>
+                  <h4>No Sub-Contractors</h4>
+                  <p>Self-performing operations for better cost control and quality assurance.</p>
+                </div>
+              </div>
+            </div>
+            <a href="aboutus.html" class="btn btn-primary mt-4">Learn More About Us</a>
+          </div>
+          <div class="split-image" data-aos="fade-left">
+            <img src="slider1/2.jpg" alt="DFMS facility management team at work" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section section-alt" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Our Services</span>
+          <h2 id="services-heading" class="section-title">End-to-End Facility Solutions</h2>
+          <p class="section-desc">We provide comprehensive facility management solutions tailored to meet diverse business and residential needs.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card" data-aos="fade-up" data-aos-delay="0">
+            <div class="card-icon"><i class="fa-solid fa-broom" aria-hidden="true"></i></div>
+            <h3>Housekeeping Services</h3>
+            <p>Visual and hygienic cleaning for commercial complexes, malls, offices, industries, hotels and institutes.</p>
+            <a href="services.html#housekeeping" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+            <h3>Electro-Mechanical</h3>
+            <p>HVAC, DG Set operations, electrical, plumbing, carpentry, and electronic security systems.</p>
+            <a href="services.html#electro-mechanical" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon"><i class="fa-solid fa-bug" aria-hidden="true"></i></div>
+            <h3>Pest Control</h3>
+            <p>Effective pest identification and elimination for institutions, healthcare, hotels, and warehouses.</p>
+            <a href="services.html#pest-control" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="0">
+            <div class="card-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></div>
+            <h3>Horticulture Services</h3>
+            <p>Beautiful gardens with amazing flora and attractive landscaping for your premises.</p>
+            <a href="services.html#horticulture" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></div>
+            <h3>Office Support</h3>
+            <p>Trained receptionists, dispatch officials, and personnel for all office requirements.</p>
+            <a href="services.html#office-support" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></div>
+            <h3>Pantry Services</h3>
+            <p>Health and hygiene in daily life with well-trained pantry staff and quality food &amp; beverages.</p>
+            <a href="services.html#pantry" class="card-link">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Why Choose Us</span>
+          <h2 id="why-heading" class="section-title">The DFMS Advantage</h2>
+          <p class="section-desc">Founded by veterans and industry leaders with decades of combined experience, we bring military-grade discipline and corporate expertise.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+            <div class="stat-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <div class="stat-number" data-count="18" data-suffix="+">0+</div>
+            <div class="stat-label">Years of Industry Experience</div>
+          </div>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+            <div class="stat-number" data-count="100" data-suffix="%">0%</div>
+            <div class="stat-label">Skilled &amp; Trained Workforce</div>
+          </div>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support &amp; Real-Time Monitoring</div>
+          </div>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stat-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Mumbai &amp; Gujarat Presence</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements / Timeline -->
+    <section class="section section-alt" aria-labelledby="journey-heading">
+      <div class="container">
+        <div class="split-layout">
+          <div data-aos="fade-right">
+            <span class="section-label">Our Journey</span>
+            <h2 id="journey-heading" class="section-title">Building Trust Through Excellence</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <h4>2024 — Foundation</h4>
+                <p>DFMS was started with the vision to revolutionize facility management services with a focus on value rather than profit.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <h4>Expansion — Mumbai &amp; Gujarat</h4>
+                <p>Established presence across two key regions with self-performing operations and no sub-contractors.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <h4>Today — Trusted Partner</h4>
+                <p>Emerged as an entity associated with trust and quality by all our partners, delivering world-class solutions.</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <div class="gallery-grid">
+              <div class="gallery-item"><img src="image/thumb/1.jpg" alt="Facility management work showcase 1" loading="lazy"></div>
+              <div class="gallery-item"><img src="image/thumb/2.jpg" alt="Facility management work showcase 2" loading="lazy"></div>
+              <div class="gallery-item"><img src="image/thumb/3.jpg" alt="Facility management work showcase 3" loading="lazy"></div>
+              <div class="gallery-item"><img src="image/thumb/4.jpg" alt="Facility management work showcase 4" loading="lazy"></div>
+              <div class="gallery-item"><img src="image/thumb/5.jpg" alt="Facility management work showcase 5" loading="lazy"></div>
+              <div class="gallery-item"><img src="image/thumb/6.jpg" alt="Facility management work showcase 6" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clientele -->
+    <section class="section" aria-labelledby="clientele-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Our Clientele</span>
+          <h2 id="clientele-heading" class="section-title">Trusted by Leading Organizations</h2>
+          <p class="section-desc">We always try to provide the best service to our valued clients.</p>
+        </div>
+        <div class="clientele-grid" data-aos="fade-up">
+          <span class="clientele-item">Empires Towers</span>
+          <span class="clientele-item">Udyog Bhavan</span>
+          <span class="clientele-item">Samarth Life Science</span>
+          <span class="clientele-item">Vihaan Building</span>
+          <span class="clientele-item">Raheja Universal</span>
+          <span class="clientele-item">Gangar Eye Nation</span>
+          <span class="clientele-item">LLOYD'S Luxuries Ltd.</span>
+          <span class="clientele-item">Truefitt &amp; Hill Saloons</span>
+          <span class="clientele-item">Raheja District Sales Office</span>
+          <span class="clientele-item">Raheja Imperia</span>
+          <span class="clientele-item">Freakins India</span>
+          <span class="clientele-item">Hind Rectifiers Ltd.</span>
+          <span class="clientele-item">ASG Eye Hospital</span>
+          <span class="clientele-item">Resonant Realtors Project Pvt. Ltd.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Testimonials</span>
+          <h2 id="testimonials-heading" class="section-title">What Our Partners Say</h2>
+        </div>
+        <div class="grid grid-3">
+          <blockquote class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+            <p class="testimonial-text">"DFMS has consistently delivered high-quality facility management services. Their self-performing model ensures reliability and cost-effectiveness."</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">C</div>
+              <div>
+                <div class="testimonial-name">Corporate Client</div>
+                <div class="testimonial-role">Commercial Property, Mumbai</div>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <p class="testimonial-text">"Their housekeeping and pest control teams are thorough and professional. We've seen a significant improvement in our facility standards."</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">H</div>
+              <div>
+                <div class="testimonial-name">Healthcare Partner</div>
+                <div class="testimonial-role">Healthcare Facility</div>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <p class="testimonial-text">"The 24/7 support and real-time monitoring give us peace of mind. DFMS truly understands facility management excellence."</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">R</div>
+              <div>
+                <div class="testimonial-name">Retail Partner</div>
+                <div class="testimonial-role">Retail &amp; Hospitality</div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section id="downloads" class="section" aria-labelledby="downloads-heading">
+      <div class="container container-narrow">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Downloads</span>
+          <h2 id="downloads-heading" class="section-title">Company Resources</h2>
+          <p class="section-desc">Download our company profile and learn more about our services and capabilities.</p>
+        </div>
+        <div class="download-card" data-aos="fade-up">
+          <div class="download-icon"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></div>
+          <div class="download-info">
+            <h4>Dynamite Company Profile</h4>
+            <p>Complete overview of DFMS services, leadership, and clientele.</p>
+            <div class="download-size">PDF Document</div>
+          </div>
+          <a href="assets/downloads/dynamite-company-profile.pdf" class="btn btn-primary btn-sm" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">FAQ</span>
+          <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list" data-aos="fade-up">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What areas does DFMS serve?
+              <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">DFMS is an established facilities management service provider with a Mumbai &amp; Gujarat presence. We serve commercial, industrial, residential, and institutional clients across these regions.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Does DFMS use sub-contractors?
+              <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">No. We are a self-performing company with no sub-contractors, which helps us reduce costs and maintain control over our operations, ensuring consistent quality for our clients.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What services does DFMS offer?
+              <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">We offer end-to-end facility management including housekeeping, electro-mechanical services, pest control, horticulture, office support, pantry services, sanitization, waste management, fire safety systems, and more.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How can I request a quote?
+              <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i></span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">You can contact us via email at bd@dfms.net.in or operations@dfms.net.in, call us at 9326485137 / 7768892465 / 9167663436, or fill out the contact form on our Contact page.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="split-layout">
+          <div data-aos="fade-right">
+            <span class="section-label">Get In Touch</span>
+            <h2 id="contact-heading" class="section-title">Ready to Transform Your Facility?</h2>
+            <p>Contact us today to discuss your facility management needs. Our team is ready to deliver world-class solutions tailored to your requirements.</p>
+            <div class="grid grid-2 mt-4" style="gap:1rem">
+              <div class="contact-info-card">
+                <div class="contact-info-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:bd@dfms.net.in">bd@dfms.net.in</a>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-info-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>9326485137 / 7768892465</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <form class="contact-form card" aria-label="Contact form">
+              <div class="form-success" role="alert">
+                <i class="fa-solid fa-check-circle" aria-hidden="true"></i> Thank you! Your message has been received. We'll get back to you soon.
+              </div>
+              <div class="form-group">
+                <div class="form-floating">
+                  <i class="form-icon fa-solid fa-user" aria-hidden="true"></i>
+                  <input type="text" id="name" name="name" placeholder=" " required aria-required="true">
+                  <label for="name">Full Name</label>
+                </div>
+                <span class="form-error">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <div class="form-floating">
+                  <i class="form-icon fa-solid fa-envelope" aria-hidden="true"></i>
+                  <input type="email" id="email" name="email" placeholder=" " required aria-required="true">
+                  <label for="email">Email Address</label>
+                </div>
+                <span class="form-error">Please enter a valid email.</span>
+              </div>
+              <div class="form-group">
+                <div class="form-floating">
+                  <i class="form-icon fa-solid fa-message" aria-hidden="true"></i>
+                  <textarea id="message" name="message" placeholder=" " required aria-required="true"></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+                <span class="form-error">Please enter your message.</span>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="color:#fff">
+            <img src="images/logo.png" alt="DFMS Logo" width="40" height="40">
+            <span>DFMS</span>
+          </a>
+          <p>Dynamite Facility Management Services Pvt Ltd — Empowering Spaces. Enabling Excellence. Delivering high-quality, cost-effective, and sustainable facility management solutions.</p>
+          <div class="footer-social">
+            <a href="mailto:bd@dfms.net.in" aria-label="Email us"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="tel:+919326485137" aria-label="Call us"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+            <a href="https://www.dfms.net.in" aria-label="Visit our website"><i class="fa-solid fa-globe" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#housekeeping">Housekeeping</a></li>
+            <li><a href="services.html#pest-control">Pest Control</a></li>
+            <li><a href="services.html#horticulture">Horticulture</a></li>
+            <li><a href="services.html#electro-mechanical">Electro-Mechanical</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Flat No A-104, Riddhi Priyanka CHS, Sector 10, Sanpada, Navi Mumbai - 400705</li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:bd@dfms.net.in">bd@dfms.net.in</a></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> 9326485137 / 7768892465</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dynamite Facility Management Services Pvt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-label="Image preview" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close preview" type="button"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <img src="" alt="Gallery preview">
+  </div>
+
+  <!-- Floating Elements -->
+  <button class="back-to-top" aria-label="Back to top" type="button"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  <a href="contact.html" class="floating-contact" aria-label="Contact us"><i class="fa-solid fa-comments" aria-hidden="true"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
