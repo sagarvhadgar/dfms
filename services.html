@@ -139,11 +139,24 @@
         <p style="color:var(--text-muted)">We provide the food and beverages of various brands and vending machines that offers a great variety to the client.</p>
         <a href="contact.html" class="btn btn-primary" style="margin-top:1.25rem">Request Service</a>
       </div>
-      <div class="service-photos reveal">
-        <img src="assets/images/dfms/web/dfms-09.jpg" alt="DFMS pantry service professional" loading="lazy">
-        <img src="assets/images/dfms/web/dfms-10.jpg" alt="Hospitality services" loading="lazy">
-        <img src="assets/images/dfms/web/dfms-13.jpg" alt="Professional DFMS hospitality staff" loading="lazy">
-      </div>
+      <!-- Copy and paste starting from here -->
+    <style>
+      /* This fixes the portrait photos so they don't awkwardly crop just the head */
+      .service-photos.reveal img {
+        width: 100% !important;
+        height: 450px !important; /* Adjust this number if you want the photo boxes taller or shorter */
+        object-fit: cover !important;
+        object-position: center 25% !important; /* Shifts the camera slightly down to capture the body/action */
+        border-radius: 8px; /* Optional: gives the photos nice slightly rounded corners */
+      }
+    </style>
+
+    <div class="service-photos reveal">
+      <img src="assets/images/dfms/web/dfms-09.jpg" alt="DFMS pantry service professional" loading="lazy">
+      <img src="assets/images/dfms/web/dfms-10.jpg" alt="Hospitality services" loading="lazy">
+      <img src="assets/images/dfms/web/dfms-13.jpg" alt="Professional DFMS hospitality staff" loading="lazy">
+    </div>
+    <!-- End of copy paste -->
     </div>
   </section>
 
